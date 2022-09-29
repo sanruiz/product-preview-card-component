@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:ital,wght@0,500;0,700;1,500;1,700&display=swap');
+
+:root {
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--cream);
+    font-family: 'Montserrat', sans-serif;
+    color: var(--dark-grayish-blue);
+    font-size: 14px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 54em;
+}
+
+.card {
+    background-color: var(--White);
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+    .card__image {
+        margin-bottom: -5px;
+        flex: 0 1 calc(50%);
+    }
+
+        .card__image img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+    .card__body {
+        flex: 0 1 calc(50% - 60px);
+        padding: 30px;
+    }
+
+        .card__body h1 {
+            font-family: 'Fraunces', serif;
+            font-size: xx-large;
+            line-height: 90%;
+            color: var(--very-dark-blue);
+        }
+
+        .card__body .price {
+            display: flex;
+            align-items: center;
+        }
+
+        .card__body .price h2 {
+            font-family: 'Fraunces', serif;
+            font-size: xx-large;
+            color: var(--dark-cyan);
+            display: inline-block;
+        }
+
+        .card__body .price span {
+            text-decoration: line-through;
+            padding-left: 15px;
+            font-size: 13px;
+        }
+
+        .card__body__category {
+            letter-spacing: 3px;
+        }
+
+        .card__body p {
+            line-height: 150%;
+        }
+
+        .card__body button {
+            background-color: hsl(158, 36%, 37%);
+            border: none;
+            border-radius: 7px;
+            width: 100%;
+            color: var(--White);
+            padding: 15px;
+            font-size: 16px;
+            font-family: 'Montserrat', sans-serif;
+            cursor: pointer;
+        }
+
+            .card__body button:hover {
+                background-color: hsl(158, 36%, 23%);
+            }
+
+@media only screen and (max-width: 600px) {
+    .card {
+        max-width: 300px;
+    }
+
+    .card__image {
+        flex: auto;
+    }
+
+    .card__body {
+        flex: auto;
+        padding: 30px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .card {
+        max-width: 600px;
+    }
+
+    .card__image {
+        max-width: 300px;
+        flex: 0 1 calc(50%);
+    }
+
+    .card__body {
+        flex: 0 1 calc(50% - 60px);
+        padding: 30px;
+    }
+}
