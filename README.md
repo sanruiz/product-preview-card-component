@@ -54,9 +54,8 @@ Your users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+`<picture>`
+The browser will consider each child `<source>` element and choose the best match among them. If no matches are found—or the browser doesn't support the `<picture>` element—the URL of the `<img>` element's src attribute is selected. The selected image is then presented in the space occupied by the `<img>` element.
 
 ```html
 <picture>
@@ -67,7 +66,7 @@ To see how you can add code snippets, see below:
 
 ### Useful resources
 
-- [<picture>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture) - The <picture> HTML element contains zero or more <source> elements and one <img> element to offer alternative versions of an image for different display/device scenarios.
+- [`<picture>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture) - The `<picture>` HTML element contains zero or more `<source>` elements and one `<img>` element to offer alternative versions of an image for different display/device scenarios.
 
 
 ## Author
