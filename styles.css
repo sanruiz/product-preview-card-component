@@ -65,8 +65,7 @@ body {
             display: inline-block;
         }
 
-        .card__body .price span {
-            text-decoration: line-through;
+        .card__body .price del {
             padding-left: 15px;
             font-size: 13px;
         }
